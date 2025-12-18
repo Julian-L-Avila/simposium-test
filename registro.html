@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro — Simposio de Física Cuántica 2025</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-F558G27GN5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-F558G27GN5');
+  </script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Titillium+Web:wght@600;700&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="header-logos">
+      <div class="header-logos-container">
+        <img src="images/distrital.png" alt="Universidad Distrital Francisco José de Caldas" class="header-logo">
+        <img src="images/javerianaDark.png" alt="Pontificia Universidad Javeriana" class="header-logo">
+      </div>
+      <div class="lang-toggle">
+        <button class="lang-btn" id="lang-toggle" aria-label="Switch language">
+          <span class="lang-code">ES</span>
+        </button>
+      </div>
+    </div>
+    <nav>
+      <div class="nav-brand">
+        <a href="index.html"><h3 data-i18n="nav.brand">Simposio Física Cuántica</h3></a>
+      </div>
+      <div class="nav-menu" id="nav-menu">
+        <ul>
+          <li><a href="acerca.html" data-i18n="nav.about">Acerca</a></li>
+          <li><a href="multimedia.html" data-i18n="nav.media">Medios Visuales</a></li>
+          <li><a href="invitados.html" data-i18n="nav.guests">Invitados</a></li>
+          <li><a href="comite.html" data-i18n="nav.committee">Organizadores</a></li>
+          <li><a href="programa.html" data-i18n="nav.program">Programa</a></li>
+          <li><a href="registro.html" data-i18n="nav.register">Registro</a></li>
+          <li><a href="lugar.html" data-i18n="nav.location">Lugar</a></li>
+          <li><a href="contacto.html" data-i18n="nav.contact">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Registro</h1>
+      <p>Completa el siguiente formulario para inscribirte al simposio. También puedes revisar la <a href="programa.html" class="btn--ghost">programación completa</a>.</p>
+
+      <div style="margin-top: 2rem;">
+        <h3>Información del evento</h3>
+        <p><strong>Fecha:</strong> 4 y 5 de Diciembre</p>
+        <p><strong>Hora:</strong> 8:00 - 18:00</p>
+        <p><strong>Lugar:</strong> <a href="lugar.html" class="btn--ghost">Ver ubicación</a></p>
+        <p><strong>Costo:</strong> Gratuito</p>
+        <p><strong>Modalidad:</strong> Presencial</p>
+      </div>
+
+      <div style="margin-top: 3rem;">
+        <h3>Formulario de Inscripción</h3>
+        <div style="width: 100%; max-width: 800px; margin: 2rem auto; border-radius: 8px; overflow: hidden; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+          <iframe 
+            src="https://docs.google.com/forms/d/e/1FAIpQLSdtCS4-JYI4i7RCrieQ4GY_G8ui4yJ-kQwmS88C7AJAUrAkjw/viewform?embedded=true" 
+            width="100%" 
+            height="1200" 
+            frameborder="0" 
+            marginheight="0" 
+            marginwidth="0"
+            style="display: block; border: none; min-height: 1200px;">
+            Cargando…
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <hr style="border:none; border-top:1px solid #1d2745; margin-bottom:1rem;">
+    <p data-i18n="footer.copyright">© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas</p>
+    <p data-i18n="footer.developed">Desarrollado por el Comité de Organización</p>
+  </footer>
+
+  <script>
+    const translations = {
+      es: {
+        'nav.brand': 'Simposio Física Cuántica',
+        'nav.about': 'Acerca del Simposio',
+        'nav.guests': 'Invitados',
+        'nav.program': 'Programa',
+        'nav.register': 'Registro',
+        'nav.location': 'Lugar',
+        'nav.committee': 'Organizadores',
+        'nav.contact': 'Contacto',
+        'footer.developed': 'Desarrollado por el Comité de Organización',
+        'footer.copyright': '© 2025 Simposio de Física Cuántica — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
+      },
+      en: {
+        'nav.brand': 'Quantum Physics Symposium',
+        'nav.about': 'About the Symposium',
+        'nav.guests': 'Guests',
+        'nav.program': 'Program',
+        'nav.register': 'Registration',
+        'nav.location': 'Location',
+        'nav.committee': 'Organizers',
+        'nav.contact': 'Contact',
+        'footer.developed': 'Developed by the Organizing Committee',
+        'footer.copyright': '© 2025 Quantum Physics Symposium — Pontificia Universidad Javeriana & Universidad Distrital Francisco José de Caldas'
+      }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'es';
+    document.documentElement.lang = currentLang;
+
+    function translate(lang) {
+      const elements = document.querySelectorAll('[data-i18n]');
+      elements.forEach(element => {
+        const key = element.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+          element.textContent = translations[lang][key];
+        }
+      });
+
+      const langBtn = document.getElementById('lang-toggle');
+      if (langBtn) {
+        const langCode = langBtn.querySelector('.lang-code');
+        if (langCode) langCode.textContent = lang.toUpperCase();
+      }
+
+      document.documentElement.lang = lang;
+      localStorage.setItem('lang', lang);
+    }
+
+    translate(currentLang);
+
+    const langToggle = document.getElementById('lang-toggle');
+    if (langToggle) {
+      langToggle.addEventListener('click', () => {
+        currentLang = currentLang === 'es' ? 'en' : 'es';
+        translate(currentLang);
+      });
+    }
+
+    const navToggle = document.getElementById('nav-toggle');
+    const navMenu = document.getElementById('nav-menu');
+
+    navToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+      navToggle.classList.toggle('active');
+    });
+
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      });
+    });
+
+    document.addEventListener('click', (e) => {
+      if (!navMenu.contains(e.target) && !navToggle.contains(e.target) && (!langToggle || !langToggle.contains(e.target))) {
+        navMenu.classList.remove('active');
+        navToggle.classList.remove('active');
+      }
+    });
+  </script>
+</body>
+</html>
